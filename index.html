@@ -4,82 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Election Story Map</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- link your styles here -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Add your custom CSS -->
 </head>
 <body>
 
-    <div class="story-map-container">
-
-        <!-- 1. Categorised Map of Dhaka Constituencies -->
-        <div class="section">
-            <h2>1. Dhaka 1-20 Constituency Boundaries</h2>
-            <img src="images/map-categorised/your-map-image.png" alt="Categorised Map">
-            <p>This first map introduces the study area. It shows Dhaka’s twenty parliamentary constituencies using different colours. This helps the reader understand the spatial structure before looking at election results.</p>
-        </div>
-
-        <!-- 2. Proportional Voter Turnout Map -->
-        <div class="section">
-            <h2>2. Voter Turnout Proportional Map</h2>
-            <img src="images/proportional/votes_turnout_proportional.png" alt="Proportional Voter Turnout Map">
-            <p>This map shows the percentage of voter turnout across Dhaka's constituencies, reflecting voter participation rates in the election.</p>
-        </div>
-
-        <!-- 3. Voter Demographics Map (Male, Female, Eunuch) -->
-        <div class="section">
-            <h2>3. Voter Demographics (Male, Female, Eunuch)</h2>
-            <img src="images/dot/dot.png" alt="Voter Demographics Map">
-            <p>This map shows the distribution of voters by gender (Male, Female, Eunuch) across Dhaka’s constituencies.</p>
-        </div>
-
-        <!-- 4. Political Parties Pie Chart -->
-        <div class="section">
-            <h2>4. Political Party Representation (BNP/Jamaat/NCP)</h2>
-            <img src="images/pie/pie.png" alt="Political Party Pie Chart">
-            <p>This pie chart represents the percentage of votes cast for different political parties, including BNP, Jamaat, and NCP.</p>
-        </div>
-
-        <!-- 5. Political Parties Choropleth Map -->
-        <div class="section">
-            <h2>5. BNP/Jamaat Party Choropleth Map</h2>
-            <img src="images/choropleth/choropleth.png" alt="BNP/Jamaat Choropleth Map">
-            <p>This choropleth map visualizes the distribution of BNP/Jamaat party influence across Dhaka’s constituencies.</p>
-        </div>
-
-        <!-- 6. Selected or Winning Parliament Members -->
-        <div class="section">
-            <h2>6. Selected or Winner Parliament Members</h2>
-            <img src="images/images/Parliament_members.png" alt="Winner Parliament Members">
-            <p>This map visualizes the elected parliament members across Dhaka’s constituencies.</p>
-        </div>
-
-        <!-- 7. Vote Margin Map -->
-        <div class="section">
-            <h2>7. Vote Margin Map (BNP/Jamaat)</h2>
-            <img src="images/margin/vote_margin.png" alt="Vote Margin Map">
-            <p>This map shows the vote margin between BNP and Jamaat across Dhaka’s constituencies.</p>
-        </div>
-
+    <div class="storymap-section">
+        <h2>1. Dhaka 1-20 Constituency Boundaries</h2>
+        <iframe src="images/Parliament_members.png" width="100%" height="600px" style="border:none;"></iframe>
+        <p>This map introduces the study area. It shows Dhaka's twenty parliamentary constituencies using different colours. This helps the reader understand the spatial structure before looking at election results.</p>
     </div>
 
-    <!-- Hover Map section (for hover interaction) -->
-    <div class="hover-map-container">
-        <h2>Hover to see more details</h2>
-
-        <!-- Hover Map 1 -->
-        <div class="hover-map-section">
-            <h3>Hover: Dhaka 1-20 Constituencies</h3>
-            <iframe src="images/map-categorised/hover-map.html" width="100%" height="400px" style="border:none;"></iframe>
-        </div>
-
-        <!-- Hover Map 2 -->
-        <div class="hover-map-section">
-            <h3>Hover: Proportional Voter Turnout</h3>
-            <iframe src="images/proportional/hover-map.html" width="100%" height="400px" style="border:none;"></iframe>
-        </div>
-
-        <!-- Add more hover maps as required -->
+    <div class="storymap-section">
+        <h2>2. Voter Turnout (Proportional)</h2>
+        <iframe src="images/diverging_map.png" width="100%" height="600px" style="border:none;"></iframe>
+        <p>This map shows the percentage of voter turnout across Dhaka's constituencies, reflecting voter participation rates in the election.</p>
     </div>
 
-    <script src="js/script.js"></script> <!-- your custom script if any -->
+    <div class="storymap-section">
+        <h2>3. Voter Demographics (Male, Female, Eunuch)</h2>
+        <iframe src="images/dot.png" width="100%" height="600px" style="border:none;"></iframe>
+        <p>This map displays the demographic breakdown of voters based on gender and other categories.</p>
+    </div>
+
+    <div class="storymap-section">
+        <h2>4. Vote Share (BNP, Jamaat, NCP)</h2>
+        <iframe src="images/pie.png" width="100%" height="600px" style="border:none;"></iframe>
+        <p>This pie chart shows the vote share distribution among different political parties: BNP, Jamaat, and NCP.</p>
+    </div>
+
+    <div class="storymap-section">
+        <h2>5. Vote Margin (BNP-Jamaat)</h2>
+        <iframe src="images/votes_turnout_proportional.png" width="100%" height="600px" style="border:none;"></iframe>
+        <p>This map visualizes the vote margin between BNP and Jamaat in Dhaka constituencies.</p>
+    </div>
+
+    <div class="storymap-section">
+        <h2>6. Selected/Winner Parliament Members</h2>
+        <iframe src="images/Parliament_members.png" width="100%" height="600px" style="border:none;"></iframe>
+        <p>This map highlights the winning parliament members across Dhaka constituencies.</p>
+    </div>
+
+    <div class="storymap-section">
+        <h2>7. Vote Margin (BNP-Jamaat)</h2>
+        <iframe src="images/votes_turnout_proportional.png" width="100%" height="600px" style="border:none;"></iframe>
+        <p>This map shows the margin of votes between the BNP and Jamaat in each constituency.</p>
+    </div>
+
 </body>
 </html>
